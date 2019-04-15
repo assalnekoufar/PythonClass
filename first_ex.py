@@ -1,10 +1,3 @@
-num_1 = 10
-num_2 = 20
-num_3 = 30
-num_4 = 40
-
-value = 20
-
-cond_one = (num_1 < value < num_2) and (num_3 < value < num_4)
-
-print(cond_one)
+lst_1 = [1, 2, 3, 4, 5, 6, 6, 3, 2, 1]
+x = len(lst_1)
+print(sum(lst_1) / x)
