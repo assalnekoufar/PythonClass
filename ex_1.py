@@ -9,4 +9,4 @@ elif 18.5 <= BMI <= 25:
 elif 25 <= BMI <= 30:
     print("overweight")
 else:
-     print("obesity")
+    print("obesity")
