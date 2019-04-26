@@ -1,15 +1,12 @@
-## < taraf smte chap istade, > taraf samte rast istade!
-state_1 = "<<<><<<<><<<<><<<<"
-stage_2 = ""
-for i in state_1:
-    if state_1 == ">":
-        state_1 = "<"
-    stage_2 += state_1
-    print(stage_2)
-else:
-    stage_2 += state_1
-print(stage_2)
+## < samte chap , > samte rast, natije : <<><<><
+state_1 = "<><<><<"
+lst = []
+i = -1
+for c in state_1:
+    lst.append(c)
+    i += 1
+    if i > 0 and lst[i-1] == ">" and lst[i] == "<":
+        lst[i-1] = "<"
+        lst[i] = ">"
 
-
-
-
+print(lst[:])
