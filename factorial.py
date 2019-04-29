@@ -6,10 +6,15 @@ def factorial(n):
 
 
 def combination(n, m):
-    value = 0
-    value = factorial(n)/factorial(n-m)*factorial(m)
+    value = factorial(n)/(factorial(n-m)*factorial(m))
     return int(value)
 
-n = int(input("please enter your n number--->"))
-m = int(input("please enter your m number--->"))
-print(combination(n, m))
+
+def pascal(r):
+    lst = []
+    for i in range(0, r+1):
+        lst.append(combination(r, i))
+    return lst
+
+
+print(pascal(2))
