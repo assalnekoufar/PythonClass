@@ -84,28 +84,34 @@ def checking_LSL(str):
     for i in range(len(str)-2):
         if str[i] == "L" and str[i+1] == "S" and str[i+2] == "L":
             lst.append(i)
-    return lst, len(lst)
+    return lst
 
 def checking_LSSL(str):
     lst = []
     for i in range(len(str)-3):
         if str[i] == "L" and str[i+1] == "S" and str[i+2] == "S" and str[i+3] == "L":
             lst.append(i)
-    return lst, len(lst)
+    return lst
 
 def checking_LSSSL(str):
     lst = []
     for i in range(len(str)-4):
         if str[i] == "L" and str[i+1] == "S" and str[i+2] == "S" and str[i+3] == "S" and str[i+4] == "L":
             lst.append(i)
-    return lst, len(lst)
+    return lst
 
 def checking_LSSSSL(str):
     lst = []
     for i in range(len(str)-5):
         if str[i] == "L" and str[i+1] == "S" and str[i+2] == "S" and str[i+3] == "S" and str[i+4] == "S" and str[i+4] == "L":
             lst.append(i)
-    return lst, len(lst)
+    return lst
+
+
+def finding_start_and_end_time(lst):
+        for i in lst:
+            return sorting(data)[i, i+1]
+
 
 print(sorting(data))
 print(duration(data))
@@ -113,8 +119,11 @@ print(describe(300, 301))
 first_arg = duration(data)
 second_arg = list(describe(300, 301))
 print(list(zip(first_arg, second_arg)))
-print(checking_LSL(describe(300, 301)))
-print(checking_LSSL(describe(300, 301)))
-print(checking_LSSSL(describe(300, 301)))
-print(checking_LSSSSL(describe(300, 301)))
-
+print(len(checking_LSL(describe(300, 301))))
+print(len(checking_LSSL(describe(300, 301))))
+print(len(checking_LSSSL(describe(300, 301))))
+print(len(checking_LSSSSL(describe(300, 301))))
+print(finding_start_and_end_time(checking_LSL(describe(300, 301))))
+print(finding_start_and_end_time(checking_LSSL(describe(300, 301))))
+print(finding_start_and_end_time(checking_LSSSL(describe(300, 301))))
+print(finding_start_and_end_time(checking_LSSSSL(describe(300, 301))))
