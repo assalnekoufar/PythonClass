@@ -66,7 +66,20 @@ def duration(lst_2):
     return lst_3
 
 
+def describe(t_1, t_2):
+    str = ""
+    for n in duration(data):
+        if n <= t_1:
+            str += "S"
+        elif n >= t_2:
+            str += "L"
+        else:
+            str += "M"
+    return str
+
+
 print(sorting(data))
 print(duration(data))
+print(describe(300, 400))
 
 
