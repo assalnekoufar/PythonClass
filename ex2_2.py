@@ -1,3 +1,4 @@
+
 data = [50.2999992370605, 142.800003051757, 242.600006103515, 338.399993896484, 435.799987792968,
         533.299987792968, 626.5, 730.900024414062, 838.799987792968, 959.400024414062, 1070.19995117187, 1195.0,
         1317.90002441406, 1447.69995117187, 1581.69995117187, 1716.69995117187, 1853.69995117187, 2009.59997558593,
@@ -108,12 +109,12 @@ def checking_LSSSSL(str):
 
 print(sorting(data))
 print(duration(data))
-print(describe(300, 400))
+print(describe(300, 301))
 first_arg = duration(data)
-second_arg = list(describe(300, 400))
+second_arg = list(describe(300, 301))
 print(list(zip(first_arg, second_arg)))
-print(checking_LSL(describe(300, 400)))
-print(checking_LSSL(describe(300, 400)))
-print(checking_LSSSL(describe(300, 400)))
-print(checking_LSSSSL(describe(300, 400)))
+print(checking_LSL(describe(300, 301)))
+print(checking_LSSL(describe(300, 301)))
+print(checking_LSSSL(describe(300, 301)))
+print(checking_LSSSSL(describe(300, 301)))
 
