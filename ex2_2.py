@@ -78,8 +78,42 @@ def describe(t_1, t_2):
     return str
 
 
+def checking_LSL(str):
+    lst = []
+    for i in range(len(str)-2):
+        if str[i] == "L" and str[i+1] == "S" and str[i+2] == "L":
+            return lst.append(i)
+
+
+def checking_LSSL(str):
+    lst = []
+    for i in range(len(str)-3):
+        if str[i] == "L" and str[i+1] == "S" and str[i+2] == "S" and str[i+3] == "L":
+            return lst.append(i)
+
+
+def checking_LSSSL(str):
+    lst = []
+    for i in range(len(str)-4):
+        if str[i] == "L" and str[i+1] == "S" and str[i+2] == "S" and str[i+3] == "S" and str[i+4] == "L":
+            return lst.append(i)
+
+
+def checking_LSSSSL(str):
+    lst = []
+    for i in range(len(str)-5):
+        if str[i] == "L" and str[i+1] == "S" and str[i+2] == "S" and str[i+3] == "S" and str[i+4] == "S" and str[i+4] == "L":
+            return lst.append(i)
+
+
 print(sorting(data))
 print(duration(data))
 print(describe(300, 400))
-
+first_arg = duration(data)
+second_arg = list(describe(300, 400))
+print(list(zip(first_arg, second_arg)))
+print(checking_LSL(describe(300, 400)))
+print(checking_LSSL(describe(300, 400)))
+print(checking_LSSSL(describe(300, 400)))
+print(checking_LSSSSL(describe(300, 400)))
 
