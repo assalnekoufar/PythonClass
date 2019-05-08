@@ -82,29 +82,29 @@ def checking_LSL(str):
     lst = []
     for i in range(len(str)-2):
         if str[i] == "L" and str[i+1] == "S" and str[i+2] == "L":
-            return lst.append(i)
-
+            lst.append(i)
+    return lst, len(lst)
 
 def checking_LSSL(str):
     lst = []
     for i in range(len(str)-3):
         if str[i] == "L" and str[i+1] == "S" and str[i+2] == "S" and str[i+3] == "L":
-            return lst.append(i)
-
+            lst.append(i)
+    return lst, len(lst)
 
 def checking_LSSSL(str):
     lst = []
     for i in range(len(str)-4):
         if str[i] == "L" and str[i+1] == "S" and str[i+2] == "S" and str[i+3] == "S" and str[i+4] == "L":
-            return lst.append(i)
-
+            lst.append(i)
+    return lst, len(lst)
 
 def checking_LSSSSL(str):
     lst = []
     for i in range(len(str)-5):
         if str[i] == "L" and str[i+1] == "S" and str[i+2] == "S" and str[i+3] == "S" and str[i+4] == "S" and str[i+4] == "L":
-            return lst.append(i)
-
+            lst.append(i)
+    return lst, len(lst)
 
 print(sorting(data))
 print(duration(data))
