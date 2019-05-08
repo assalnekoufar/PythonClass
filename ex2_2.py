@@ -109,8 +109,8 @@ def checking_LSSSSL(str):
 
 
 def finding_start_and_end_time(lst):
-        for i in lst:
-            return sorting(data)[i, i+1]
+    for n in range(len(lst)-1):
+        return sorting(data)[(lst[n]), (lst[n+1])]
 
 
 print(sorting(data))
@@ -124,6 +124,6 @@ print(len(checking_LSSL(describe(300, 301))))
 print(len(checking_LSSSL(describe(300, 301))))
 print(len(checking_LSSSSL(describe(300, 301))))
 print(finding_start_and_end_time(checking_LSL(describe(300, 301))))
-print(finding_start_and_end_time(checking_LSSL(describe(300, 301))))
-print(finding_start_and_end_time(checking_LSSSL(describe(300, 301))))
-print(finding_start_and_end_time(checking_LSSSSL(describe(300, 301))))
+# print(finding_start_and_end_time(checking_LSSL(describe(300, 301))))
+# print(finding_start_and_end_time(checking_LSSSL(describe(300, 301))))
+# print(finding_start_and_end_time(checking_LSSSSL(describe(300, 301))))
