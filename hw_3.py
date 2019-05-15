@@ -4,8 +4,9 @@ f.close()
 
 
 def counting_words(text):
-    text = text.lower().split()
-    return len(text)
+    text_new = text.lower().split()
+    text_with_out_repetition = set(text.lower().split())
+    return len(text_new), len(text_with_out_repetition)
 
 
 print(counting_words(poem))
