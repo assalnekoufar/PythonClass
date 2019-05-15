@@ -3,10 +3,13 @@ poem = f.read()
 f.close()
 
 
-def counting_words(text):
-    text_new = text.lower().split()
-    text_with_out_repetition = set(text.lower().split())
-    return len(text_new), len(text_with_out_repetition)
+def dictionary_of_unique_words(text):
+    dict_unique = {}
+    words = text.lower().split()
+    unique = set(words)
+    for i in unique:
+        dict_unique[i] = words.count(i)
+    return dict_unique
 
 
-print(counting_words(poem))
+print(dictionary_of_unique_words(poem))
